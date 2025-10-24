@@ -1,5 +1,3 @@
-[![Dataprovider.com MCP Server](assets/banner.png)](https://dataprovider.com)
-
 ## 🌟 Overview
 
 The Dataprovider.com MCP server gives AI assistants and MCP-compatible clients instant access to live web data from
