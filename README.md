@@ -1,7 +1,7 @@
 ## 🌟 Overview
 
 The Dataprovider.com MCP server gives AI assistants and MCP-compatible clients instant access to live web data from
-Dataprovider.com — no infrastructure, no scraping, just structured tools you can call.
+Dataprovider.com
 
 - Endpoint: `https://mcp.dataprovider.com/mcp`
 - Authentication: API key via header `X-API-Key` or query param `?api-key=YOUR_API_KEY`
