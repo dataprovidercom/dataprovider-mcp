@@ -1,4 +1,4 @@
-const API_KEY = "dp_sxmCGwnuFgxeLhJq1xM4cXJA7vab1Z0zmLciAhchRX";
+const API_KEY = "<YOUR_API_KEY>";
 
 function buildEndpoint(apiKey: string): string {
     return `https://mcp.dataprovider.com/mcp?api-key=${encodeURIComponent(apiKey)}`;

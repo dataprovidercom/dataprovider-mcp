@@ -1,6 +1,6 @@
 <?php
 
-$API_KEY = "dp_sxmCGwnuFgxeLhJq1xM4cXJA7vab1Z0zmLciAhchRX";
+$API_KEY = "<YOUR_API_KEY>";
 
 function rpc($endpoint, $method, $params) {
     $body = json_encode([
