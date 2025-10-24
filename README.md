@@ -8,7 +8,7 @@ Dataprovider.com
 
 ## ⚡ Quick Start
 
-Use the hosted server. No installation required.
+There are 3 ways to connect with the Dataprovider.com MCP
 
 1) With query parameter
 
@@ -26,12 +26,34 @@ Use the hosted server. No installation required.
 - URL: `https://mcp.dataprovider.com/mcp?api-key=YOUR_API_KEY`
 - Save
 
-## ✨ Features
+## 📚 Examples
 
-- Hosted MCP endpoint with API key authentication
-- Clean the tool surface aligned with the Dataprovider.com backend
-- High-level helper tools for discovery and filter creation
-- Pagination, sorting, time windows, and aggregation support
+See `examples/` for TypeScript, Python, and PHP examples. Each example:
+
+- Declares an API key variable you must fill in
+- Lists available tools
+- Calls `get_available_fields`, `create_query_filter`, and `lookup_data`
+
+Each examples subfolder contains its own README with setup and run instructions.
+
+## 🔐 Authentication
+
+- Query parameter: `?api-key=YOUR_API_KEY`
+- Or header: `X-API-Key: YOUR_API_KEY`
+
+## 🧭 Typical Workflow
+
+1. `get_available_fields()` to learn field names in your subscription.
+2. `create_query_filter(question)` to convert natural language into a DPQL filter.
+3. Use the filter with:
+    - `lookup_data` (records)
+    - `analyze_trends` (time series)
+    - `aggregate_data` (distributions)
+4. Or the other tools:
+    - `discover_field_values` (value discovery across fields)
+    - `find_similar_websites` (similarity search)
+    - `perform_reverse_dns_lookup` (reverse DNS)
+    - `get_website_traffic` (traffic trend data)
 
 ## 🔧 Available Tools
 
@@ -220,32 +242,3 @@ These are discoverable via the MCP tools listing in compatible clients.
   }
 }
 ```
-
-## 🧭 Typical Workflow
-
-1. `get_available_fields()` to learn field names in your subscription.
-2. `create_query_filter(question)` to convert natural language into a DPQL filter.
-3. Use the filter with:
-    - `lookup_data` (records)
-    - `analyze_trends` (time series)
-    - `aggregate_data` (distributions)
-4. Or the other tools:
-    - `discover_field_values` (value discovery across fields)
-    - `find_similar_websites` (similarity search)
-    - `perform_reverse_dns_lookup` (reverse DNS)
-    - `get_website_traffic` (traffic trend data)
-
-## 📚 Examples
-
-See `examples/` for TypeScript, Python, and PHP examples. Each example:
-
-- Declares an API key variable you must fill in
-- Lists available tools
-- Calls `get_available_fields`, `create_query_filter`, and `lookup_data`
-
-Each examples subfolder contains its own README with setup and run instructions.
-
-## 🔐 Authentication
-
-- Query parameter: `?api-key=YOUR_API_KEY`
-- Or header: `X-API-Key: YOUR_API_KEY`
