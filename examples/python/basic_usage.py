@@ -4,7 +4,7 @@ import urllib.request
 import ssl
 import os
 
-API_KEY = "<YOUR_API_KEY>"
+API_KEY = "<YOUR_ACCESS_TOKEN>"
 
 
 def _rpc(endpoint: str, method: str, params: dict) -> dict:

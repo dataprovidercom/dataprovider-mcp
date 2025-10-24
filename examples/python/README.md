@@ -4,7 +4,7 @@
 
 - Python 3.9+
 - Internet access
-- Your Dataprovider.com API key
+- Your Dataprovider.com access token
 
 ### Configure
 

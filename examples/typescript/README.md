@@ -4,7 +4,7 @@
 
 - Node.js 18+
 - Internet access
-- Your Dataprovider.com API key
+- Your Dataprovider.com access token
 
 ### Configure
 

@@ -4,7 +4,7 @@
 
 - PHP 8.0+
 - Internet access
-- Your Dataprovider.com API key
+- Your Dataprovider.com access token
 
 ### Configure
 

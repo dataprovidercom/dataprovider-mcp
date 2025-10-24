@@ -4,26 +4,29 @@ The Dataprovider.com MCP server gives AI assistants and MCP-compatible clients i
 Dataprovider.com
 
 - Endpoint: `https://mcp.dataprovider.com/mcp`
-- Authentication: API key via header `X-API-Key` or query param `?api-key=YOUR_API_KEY`
+- Authentication: API key via header `X-API-Key` or query param `?api-key=YOUR_ACCESS_TOKEN`
 
 ## ⚡ Quick Start
 
-There are 3 ways to connect with the Dataprovider.com MCP
+First [create a personal access token](https://console.dataprovider.com/app/account/profile/access-tokens) in your
+Dataprovider.com account (Account → Profile → Access tokens)
+
+If you created your token are 3 ways to connect with the Dataprovider.com MCP
 
 1) With query parameter
 
-`https://mcp.dataprovider.com/mcp?api-key=YOUR_API_KEY`
+`https://mcp.dataprovider.com/mcp?api-key=YOUR_ACCESS_TOKEN`
 
 2) With header
 
-- `X-API-Key: YOUR_API_KEY`
+- `X-API-Key: YOUR_ACCESS_TOKEN`
 - URL: `https://mcp.dataprovider.com/mcp`
 
 3) Connect from MCP clients (e.g., Claude Desktop)
 
 - Settings → Connectors → Add custom connector
 - Name: `Dataprovider MCP`
-- URL: `https://mcp.dataprovider.com/mcp?api-key=YOUR_API_KEY`
+- URL: `https://mcp.dataprovider.com/mcp?api-key=YOUR_ACCESS_TOKEN`
 - Save
 
 ## 📚 Examples
@@ -38,8 +41,8 @@ Each examples subfolder contains its own README with setup and run instructions.
 
 ## 🔐 Authentication
 
-- Query parameter: `?api-key=YOUR_API_KEY`
-- Or header: `X-API-Key: YOUR_API_KEY`
+- Query parameter: `?api-key=YOUR_ACCESS_TOKEN`
+- Or header: `X-API-Key: YOUR_ACCESS_TOKEN`
 
 ## 🧭 Typical Workflow
 

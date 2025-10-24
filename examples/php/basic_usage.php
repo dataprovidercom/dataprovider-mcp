@@ -1,6 +1,6 @@
 <?php
 
-$API_KEY = "<YOUR_API_KEY>";
+$API_KEY = "<YOUR_ACCESS_TOKEN>";
 
 function rpc($endpoint, $method, $params) {
     $body = json_encode([
