@@ -60,5 +60,3 @@ $filter = (structured_from($filterRes)['filter'] ?? null);
 // 3) Lookup using the selected fields and returned filter
 $lookupRes = rpc($endpoint, 'tools/call', ['name' => 'lookup_data', 'arguments' => ['filter' => $filter, 'fields' => $chosen, 'page' => 0, 'size' => 5]]);
 echo json_encode(($lookupRes['structuredContent'] ?? $lookupRes), JSON_PRETTY_PRINT) . "\n";
-
-

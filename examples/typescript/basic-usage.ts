@@ -87,4 +87,3 @@ async function readData(resp: Response): Promise<any> {
 main().catch(err => {
     console.error(err);
 });
-
