@@ -11,7 +11,7 @@ Dataprovider.com
 First [create a personal access token](https://console.dataprovider.com/app/account/profile/access-tokens) in your
 Dataprovider.com account (Account → Profile → Access tokens)
 
-If you created your token are 3 ways to connect with the Dataprovider.com MCP
+If you created your access token, there are three ways to connect with the Dataprovider.com MCP
 
 1) With query parameter
 
